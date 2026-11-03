@@ -1,0 +1,499 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080808">
+
+<title>TressKart | Premium Human Hair</title>
+
+<meta name="description" content="Discover premium real human hair at TressKart. Shop loose human hair and premium hair bundles.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --black: #080808;
+  --dark: #111111;
+  --gold: #D6AA50;
+  --gold-light: #F2D58B;
+  --white: #F8F7F4;
+  --muted: #A5A19A;
+  --line: #34302A;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* HEADER */
+
+header {
+  height: 88px;
+  padding: 0 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #080808;
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand img {
+  width: 57px;
+  height: 57px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.brand-name {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.brand-name span { color: var(--gold); }
+
+.brand-name small {
+  display: block;
+  font-size: 8px;
+  letter-spacing: 2px;
+  color: var(--muted);
+  margin-top: 5px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+nav a {
+  font-size: 12px;
+  color: #D5D0C7;
+  transition: .3s;
+}
+
+nav a:hover { color: var(--gold); }
+
+.cart {
+  border: 1px solid var(--gold);
+  padding: 11px 17px;
+  color: var(--gold);
+}
+
+/* HERO */
+
+.hero {
+  min-height: 590px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 65px 20px;
+  background:
+    radial-gradient(ellipse at center, #302312 0%, #15100A 30%, #080808 72%);
+}
+
+.hero-content {
+  max-width: 750px;
+}
+
+.hero-logo {
+  width: 155px;
+  height: 155px;
+  object-fit: contain;
+  margin-bottom: 22px;
+}
+
+.eyebrow {
+  color: var(--gold);
+  font-size: 10px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(52px, 9vw, 85px);
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 22px;
+}
+
+.hero h1 span { color: var(--gold); }
+
+.hero p.description {
+  max-width: 440px;
+  margin: auto;
+  color: #B9B3A9;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.button {
+  display: inline-block;
+  background: linear-gradient(120deg, #B88B3E, #F0D38A);
+  color: #090909;
+  padding: 16px 30px;
+  margin-top: 30px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  transition: .3s;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px #D6AA5033;
+}
+
+/* COLLECTION */
+
+.section {
+  padding: 85px 8%;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-heading h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(36px, 6vw, 52px);
+  font-weight: 500;
+}
+
+.section-heading h2 span { color: var(--gold); }
+
+.section-heading p {
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.category {
+  min-height: 330px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background:
+    linear-gradient(0deg, #000000E8, #00000010),
+    linear-gradient(135deg, #66513A, #211B15);
+  border: 1px solid #51402A;
+  transition: .3s;
+}
+
+.category:nth-child(2) {
+  background:
+    linear-gradient(0deg, #000000E8, #00000010),
+    linear-gradient(135deg, #81715D, #29221A);
+}
+
+.category:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+}
+
+.category small {
+  color: var(--gold);
+  letter-spacing: 2px;
+  font-size: 9px;
+}
+
+.category h3 {
+  font: 500 38px 'Cormorant Garamond', serif;
+  margin: 10px 0;
+}
+
+.category p {
+  color: #C9C3B9;
+  font-size: 12px;
+}
+
+/* WHY TRESSKART */
+
+.promise {
+  background: #111111;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+  padding: 75px 20px;
+}
+
+.promise h2 {
+  font: 500 42px 'Cormorant Garamond', serif;
+  margin: 15px 0;
+}
+
+.promise h2 span { color: var(--gold); }
+
+.promise p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+  max-width: 480px;
+  margin: auto;
+}
+
+/* FOOTER */
+
+footer {
+  background: #050505;
+  padding: 50px 20px 25px;
+  text-align: center;
+}
+
+.footer-logo {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+footer h3 {
+  letter-spacing: 4px;
+  font-size: 18px;
+}
+
+footer h3 span { color: var(--gold); }
+
+footer p {
+  color: var(--muted);
+  font-size: 11px;
+  margin: 12px 0 25px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.footer-links a {
+  font-size: 11px;
+  color: #CCC;
+}
+
+footer .copyright {
+  border-top: 1px solid var(--line);
+  padding-top: 22px;
+  font-size: 10px;
+  color: #777;
+}
+
+/* MOBILE */
+
+@media(max-width: 650px) {
+  header {
+    height: auto;
+    min-height: 78px;
+    padding: 12px 5%;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .brand img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .brand-name { font-size: 17px; }
+
+  nav {
+    width: 100%;
+    justify-content: center;
+    gap: 18px;
+    padding-bottom: 8px;
+  }
+
+  nav a { font-size: 10px; }
+
+  .cart { padding: 8px 10px; }
+
+  .hero { min-height: 510px; }
+
+  .hero-logo {
+    width: 125px;
+    height: 125px;
+  }
+
+  .section { padding: 60px 6%; }
+
+  .categories { grid-template-columns: 1fr; }
+
+  .category { min-height: 250px; }
+
+  .promise h2 { font-size: 35px; }
+
+  .footer-links { gap: 16px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+  <a href="index.html" class="brand">
+    <img src="tresskart-logo.png" alt="TressKart logo">
+    <div class="brand-name">
+      TRESS<span>KART</span>
+      <small>PREMIUM HUMAN HAIR</small>
+    </div>
+  </a>
+
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="shop.html">SHOP</a>
+    <a href="tracking.html">TRACK ORDER</a>
+    <a href="#contact">CONTACT</a>
+    <a href="cart.html" class="cart">BAG</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+  <div class="hero-content">
+
+    <img
+      src="tresskart-logo.png"
+      alt="TressKart official brand logo"
+      class="hero-logo"
+    >
+
+    <div class="eyebrow">THE PREMIUM HAIR COLLECTION</div>
+
+    <h1>
+      Beauty begins with<br>
+      <span>the right hair.</span>
+    </h1>
+
+    <p class="description">
+      Discover premium real human hair.
+      Explore our carefully selected loose hair
+      and beautiful hair bundles.
+    </p>
+
+    <a href="shop.html" class="button">
+      EXPLORE COLLECTION ↗
+    </a>
+
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+
+<section class="section" id="shop">
+
+  <div class="section-heading">
+    <div class="eyebrow">DISCOVER TRESSKART</div>
+    <h2>Explore our <span>collections.</span></h2>
+    <p>Find the perfect hair for your style.</p>
+  </div>
+
+  <div class="categories">
+
+    <a href="shop.html?category=loose" class="category">
+      <small>01 / COLLECTION</small>
+      <h3>Loose Hair</h3>
+      <p>Explore our loose human hair collection ↗</p>
+    </a>
+
+    <a href="shop.html?category=bundles" class="category">
+      <small>02 / COLLECTION</small>
+      <h3>Hair Bundles</h3>
+      <p>Discover premium hair bundles ↗</p>
+    </a>
+
+  </div>
+</section>
+
+<!-- BRAND PROMISE -->
+
+<section class="promise">
+  <div class="eyebrow">THE TRESSKART PROMISE</div>
+
+  <h2>
+    Real Hair. <span>Real Beauty.</span>
+  </h2>
+
+  <p>
+    Quality meets elegance.
+    Explore our collection of real human hair
+    with detailed product information and a
+    simple shopping experience.
+  </p>
+
+  <a href="shop.html" class="button">
+    SHOP TRESSKART ↗
+  </a>
+</section>
+
+<!-- FOOTER -->
+
+<footer id="contact">
+
+  <img src="tresskart-logo.png"
+       alt="TressKart logo"
+       class="footer-logo">
+
+  <h3>TRESS<span>KART</span></h3>
+
+  <p>PREMIUM REAL HUMAN HAIR</p>
+
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="tracking.html">Track Order</a>
+    <a href="mailto:hello@tresskart.com">Contact</a>
+  </div>
+
+  <div class="copyright">
+    © 2026 TressKart. All Rights Reserved.
+  </div>
+
+</footer>
+
+</body>
+</html>
